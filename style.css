@@ -7,6 +7,12 @@ body {
     background-size: 100%;
     color: rgb(31, 31, 31);
     font-family: 'Inter', sans-serif;
+    height: calc(100vh - 20px);
+}
+
+a {
+    text-decoration: none;
+    color: #51a8ff;
 }
 
 .header {

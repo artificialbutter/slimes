@@ -17,6 +17,9 @@
     <div class="container overflow-hidden text-center header">
         <h1 class="p-3">slimes when? 🥺</h1>
         <noscript>this site requires javascript to function! please make sure it is enabled.</noscript>
+        <div class="alert alert-danger" role="alert" id="invalidbatch" style="display: none;">
+            Invalid batch number!
+          </div>   
     </div>
 
     <div class="container overflow-hidden text-center ship">
@@ -24,21 +27,25 @@
             <div class="col-6">
                 <h3 class="p-3">Batch 1</h1>
                     <h1 class="" id="countdown1">Loading...</h1>
+                <h3 class="p-3" id="1">Batch 1</h1>
                     <h6 class="">(Estimated)</h1>
             </div>
             <div class="col-6">
                 <h3 class="p-3">Batch 2</h1>
                     <h1 class="" id="countdown2">Loading...</h1>
+                <h3 class="p-3" id="2">Batch 2</h1>
                     <h6 class="">(Estimated)</h1>
             </div>
             <div class="col-6">
                 <h3 class="p-3">Batch 3</h1>
                     <h1 class="" id="countdown3">Loading...</h1>
+                <h3 class="p-3" id="3">Batch 3</h1>
                     <h6 class="">(Estimated)</h1>
             </div>
             <div class="col-6">
                 <h3 class="p-3">Batch 4</h1>
                     <h1 class="" id="countdown4">Loading...</h1>
+                <h3 class="p-3" id="4">Batch 4</h1>
                     <h6 class="">(Estimated)</h1>
             </div>
         </div>
@@ -52,7 +59,9 @@
     </div>
     
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    
+
+    <script src="main.js"></script>
+
     <script src="countdown1.js"></script>
     <script src="countdown2.js"></script>
     <script src="countdown3.js"></script>

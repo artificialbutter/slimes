@@ -24,4 +24,4 @@ var x = setInterval(function () {
         clearInterval(x);
         document.getElementById("countdown1").innerHTML = "Shipped!(?)";
     }
-}, 1000);
+}, 3000);

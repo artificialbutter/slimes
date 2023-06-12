@@ -6,6 +6,6 @@ if (batch) {
     if (batch.match(/[^1234]/g)) {
         document.getElementById("invalidbatch").style.display = "block";
     } else {
-    document.getElementById(batch).innerHTML = "Batch " + batch + " ⭐";
+        document.getElementById(batch).innerHTML = `Batch ${batch} ⭐`;
     }
 }

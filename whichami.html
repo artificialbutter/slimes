@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>slime batch finder</title>
+    <meta name="description" content="uwu">
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container overflow-hidden text-center header">
+        <h1 class="p-3">what batch are you in?</h1>
+        <noscript>this site requires javascript to function! please make sure it is enabled.</noscript>
+    </div>
+
+    <div class="container overflow-hidden text-center ship">
+        <form class="m-5" id="orderDateForm">
+            <div class="mb-3">
+              <label for="dateInput" class="form-label"> your order date</label>
+              <input type="date" class="form-control" id="dateInput" aria-describedby="dateHelp" required>
+              <div id="dateHelp" class="form-text">you can find this on your crowdsupply orders page (crowdsupply.com/account/orders)</div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+          <h4 id="output"></h4>
+    </div>
+
+    <div class="container overflow-hidden text-center footer">
+            <h6 class="pt-4 pb-4">site built with ❤️ by <a href="https://arti.gay" target="_blank">ArtificialVR</a>. not affiliated with the SlimeVR team.</h6>
+    </div>
+    
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <script src="whichami.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

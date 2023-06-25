@@ -15,7 +15,10 @@ var x = setInterval(function () {
     var days = Math.floor(distance / (1000 * 60 * 60 * 24) % 7);
     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-
+    
+    if (days < 1) {
+        days = "< 1"
+    }
     // Output the result in the countdown1 element
     document.getElementById("countdown1").innerHTML = weeks + " weeks " + days + " days";
 
@@ -24,4 +27,6 @@ var x = setInterval(function () {
         clearInterval(x);
         document.getElementById("countdown1").innerHTML = "Shipped!(?)";
     }
+    
+
 }, 3000);

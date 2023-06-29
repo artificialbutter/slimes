@@ -28,8 +28,8 @@ var x = setInterval(function () {
     // If countdown is finished
     if (distance < 0) {
         clearInterval(x);
-        document.getElementById("countdown1").innerHTML = "Shipped!(?)";
+        document.getElementById("countdown1").innerHTML = "0 days 0 hours";
     }
-    
+
 
 }, 3000);

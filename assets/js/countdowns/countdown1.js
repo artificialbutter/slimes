@@ -4,6 +4,15 @@ function formatTime(value, label) {
     return value + " " + label + (value === 1 ? "" : "s");
 }
 
+window.onload = function() {
+    var numAnim = new countUp.CountUp('countup1', 1414, { duration: 3 });
+    if (!numAnim.error) {
+      numAnim.start();
+    } else {
+      console.error(numAnim.error);
+    }
+  }
+
 var x = setInterval(function () {
 
     var now = new Date().getTime();
@@ -23,13 +32,13 @@ var x = setInterval(function () {
         countdown = `${formatTime(days, "day")} ${formatTime(hours, "hour")}`;
     }
     // Output
-    document.getElementById("countdown1").innerHTML = countdown
+    //document.getElementById("countdown1").innerHTML = countdown
 
     // If countdown is finished
     if (distance < 0) {
         clearInterval(x);
-        document.getElementById("countdown1").innerHTML = "0 days 0 hours";
+        //document.getElementById("countdown1").innerHTML = "0 days 0 hours";
     }
 
 
-}, 3000);
+}, 1000);

@@ -1,4 +1,4 @@
-var countDownDate2 = new Date("Jul 24, 2023").getTime();
+var countDownDate2 = new Date("Jul 31, 2023").getTime();
 
 function formatTime(value, label) {
     return value + " " + label + (value === 1 ? "" : "s");
